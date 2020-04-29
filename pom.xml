@@ -12,10 +12,10 @@
     </parent>
     
     <groupId>ZipkinServer</groupId>
-    <artifactId>ZipkinServer</artifactId>
+    <artifactId>zipkinserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ZipkinServer</name>
-    <description>ZipkinServer</description>
+    <name>zipkinserver</name>
+    <description>zipkinserver</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -63,14 +63,14 @@
             <artifactId>zipkin-dependencies-elasticsearch</artifactId>
             <version>2.4.1</version>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
+        </dependency>-->
+<!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <dependencyManagement>
@@ -90,21 +90,21 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!-- Info page provids Build Information -->
+<!--                &lt;!&ndash; Info page provids Build Information &ndash;&gt;
                 <executions>
                     <execution>
                         <goals>
                             <goal>build-info</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions>-->
             </plugin>
 
-            <!-- Info page provids Git Information -->
+<!--            &lt;!&ndash; Info page provids Git Information &ndash;&gt;
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
